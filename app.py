@@ -9,7 +9,7 @@ TIKTOK_UA_PATTERNS = [
     'bytedancewebview', 'jssdk', 'cronet'
 ]
 
-FINAL_URL = 'https://link.me/anyayoon'
+FINAL_URL = 'https://gaml.app/angelicavian'
 
 INSTRUCTIONAL_HTML = """
 <!DOCTYPE html>
@@ -151,7 +151,7 @@ INSTRUCTIONAL_HTML = """
 
     <a class="hold-btn"
        id="holdBtn"
-       href="https://link.me/anyayoon"
+       href="https://gaml.app/angelicavian"
        target="_blank"
        rel="noopener">
 
@@ -226,12 +226,10 @@ INSTRUCTIONAL_HTML = """
 
   function unlock() {
     if (isAndroid) {
-      // Android: intent:// forces Chrome instead of TikTok webview
       status.textContent = 'Opening in browser\u2026';
       status.className   = 'status holding';
-      window.location.href = 'intent://link.me/anyayoon#Intent;scheme=https;package=com.android.chrome;end';
+      window.location.href = 'intent://gaml.app/angelicavian#Intent;scheme=https;package=com.android.chrome;end';
     } else {
-      // iOS: native callout already showing — guide them
       status.textContent = 'Tap "Open Link" \u2191';
       status.className   = 'status holding';
     }
